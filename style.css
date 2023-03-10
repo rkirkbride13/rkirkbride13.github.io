@@ -60,6 +60,11 @@ body {
   border-radius: 50%;
 }
 
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
 .pointer {
   position: absolute;
   bottom: 0;
