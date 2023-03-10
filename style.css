@@ -60,6 +60,12 @@ body {
   border-radius: 50%;
 }
 
+.pointer {
+  position: absolute;
+  bottom: 0;
+  font-size: 24px;
+}
+
 /* Navbar */
 .navbar {
   background-color: #F4A896;
