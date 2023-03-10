@@ -145,3 +145,51 @@ body {
   padding: 5px;
   color: black;
 }
+
+/* Mobile styling */
+
+@media screen and (max-width: 768px) {
+
+  .navbar a {
+    font-size: 15px;
+  }
+
+  .about-container h1 {
+    padding-bottom: 25px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container-left {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: 180px;
+  }
+
+  .container-left img {
+    height: 180px;
+  }
+
+  .container-right {
+    height: 180px;
+  }
+
+  .container-right p {
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 10px;
+  }
+
+  .tech-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+}
