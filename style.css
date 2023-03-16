@@ -11,7 +11,8 @@ html {
 }
 
 body {
-  font-family: 'Inconsolata', monospace;;
+  font-family: 'Inconsolata', monospace;
+  width: 100%
 }
 
 /* Navbar */
@@ -46,7 +47,8 @@ body {
 }
 
 .introduction h1 {
-  padding-bottom: 100px;
+  padding-top: 55px;
+  padding-bottom: 50px;
 }
 
 .container {
@@ -55,6 +57,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-bottom: 100px;
 }
 
 .container-right {
@@ -111,8 +114,6 @@ body {
 }
 
 .pointer {
-  position: absolute;
-  bottom: 10px;
   font-size: 24px;
 }
 
@@ -219,5 +220,9 @@ body {
     height: 20px;
     margin-right: 5px;
     margin-bottom: 10px;
+  }
+
+  .pointer {
+    font-size: 18px;
   }
 }
