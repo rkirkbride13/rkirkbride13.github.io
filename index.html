@@ -12,15 +12,15 @@
     <title>Robbie.</title>
   </head>
   <body>
+    <nav class="navbar">
+      <a href="https://github.com/rkirkbride13/CV/blob/master/_Robbie%20Kirkbride%20CV.pdf">CV</a>
+      <a href="https://www.linkedin.com/in/robbie-kirkbride">LinkedIn</a>
+      <a href="mailto:robbie.w.m.kirkbride@gmail.com">Email</a>
+      <a href="https://github.com/rkirkbride13">GitHub</a>
+      <a href="https://medium.com/@robbie_kirkbride">Blog</a>
+    </nav>
     <main>
-      <div class="navbar">
-        <a href="https://github.com/rkirkbride13/CV/blob/master/_Robbie%20Kirkbride%20CV.pdf">CV</a>
-        <a href="https://www.linkedin.com/in/robbie-kirkbride">LinkedIn</a>
-        <a href="mailto:robbie.w.m.kirkbride@gmail.com">Email</a>
-        <a href="https://github.com/rkirkbride13">GitHub</a>
-        <a href="https://medium.com/@robbie_kirkbride">Blog</a>
-      </div>
-      <div class="about-container">
+      <section class="introduction">
         <h1>
           Hi, I'm Robbie.
         </h1>
@@ -35,29 +35,66 @@
               designing bridges I'm looking to take on a new 
               challenge in the world of tech. Below are some of 
               the projects I have worked on, both in agile teams 
-              and solo. Please take a look! And to read about my 
-              transition from civil engineering to coding, check 
-              out my Medium blog too.
+              and solo. Please take a look! The tech I have experience 
+              with is outlined below. To read about my transition 
+              from civil engineering to coding, check out my Medium 
+              blog too.
             </p>
-            <p class="icons">
-              <img class="tech-icon" src="./images/javascript.png" />
-              <img class="tech-icon" src="./images/typescript.png" />
-              <img class="tech-icon" src="./images/ruby.png" />
-              <img class="tech-icon" src="./images/react.png" />
-              <img class="tech-icon" src="./images/node.png" />
-              <img class="tech-icon" src="./images/html.png" />
-              <img class="tech-icon" src="./images/css.png" />
-              <img class="tech-icon" src="./images/tailwind.png" />
-              <img class="tech-icon" src="./images/mongo.png" />
-              <img class="tech-icon" src="./images/jest.png" />
-              <svg class="tech-icon" version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"><path d="M322.3841858,145.5756683l68.548645,70.2840576l-17.3540955,31.6712189L254.2693634,396.7760925L134.9600067,251.0017548l-17.3540802-35.1420288l68.5486603-70.2840576H322.3841858z M300.2753296,36.0098267l-25.675415,33.9448318C398.0108337,82.0305328,472.09729,207.9121399,433.0419312,318.339447l19.8748169,39.5286865l39.4950256-2.9891663C557.3461304,200.6106415,454.3111572,17.9335766,279.6802673,1.7554766L300.2753296,36.0098267z M17.5861988,348.6918945C-48.5365944,180.315567,80.158432-5.4326692,263.9243469,0.7554546l20.6960144,34.4221573l-25.6242065,33.8766632C124.322998,66.6426926,31.0979595,205.1722717,83.364296,328.7980347l-42.7707596-11.2215271L17.5861988,348.6918945z M486.2941284,368.3666382l-41.0731506,3.1086121l-18.6675415-37.1272278c-54.1093445,124.8833008-250.5884705,162.1810303-335.9082642,9.7871704l-44.8388557-11.7642212l-22.3011608,30.1600037C128.0107422,576.4527588,405.0795898,543.1512451,486.2941284,368.3666382z" fill="#F4A896"/></svg>
-              <svg class="tech-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"><title>Cypress</title><path d="M11.998 0C5.366 0 0 5.367 0 12a11.992 11.992 0 0 0 12 12c6.633 0 12-5.367 12-12-.001-6.633-5.412-12-12.002-12zM6.37 14.575c.392.523.916.742 1.657.742.35 0 .699-.044 1.004-.175.306-.13.655-.306 1.09-.567l1.223 1.745c-1.003.83-2.138 1.222-3.447 1.222-1.048 0-1.92-.218-2.705-.654a4.393 4.393 0 0 1-1.746-1.92c-.392-.83-.611-1.79-.611-2.925 0-1.09.219-2.094.61-2.923a4.623 4.623 0 0 1 1.748-2.007c.741-.48 1.657-.698 2.661-.698.699 0 1.353.087 1.877.305a5.64 5.64 0 0 1 1.614.96l-1.222 1.658A4.786 4.786 0 0 0 9.12 8.77c-.305-.13-.698-.174-1.048-.174-1.483 0-2.225 1.134-2.225 3.446-.043 1.18.175 2.008.524 2.532H6.37zm12 2.705c-.436 1.353-1.091 2.357-2.008 3.098-.916.743-2.138 1.135-3.665 1.266l-.305-2.05c1.003-.132 1.745-.35 2.225-.7.174-.13.524-.523.524-.523L11.519 6.764h3.01l2.095 8.683 2.226-8.683h2.923L18.37 17.28z" fill="#F4A896"/></svg>
-            </p>
+            <div class="icons">
+              <div class="tooltip">
+                <img class="tech-icon" src="./images/javascript.png" />
+                <span class="tooltip-text">JavaScript</span>
+              </div>
+              <div class="tooltip">
+                <img class="tech-icon" src="./images/typescript.png" />
+                <span class="tooltip-text">TypeScript</span>
+              </div>
+              <div class="tooltip">
+                <img class="tech-icon" src="./images/ruby.png" />
+                <span class="tooltip-text">Ruby</span>
+              </div>
+              <div class="tooltip">
+                <img class="tech-icon" src="./images/react.png" />
+                <span class="tooltip-text">React</span>
+              </div>
+              <div class="tooltip">
+                <img class="tech-icon" src="./images/node.png" />
+                <span class="tooltip-text">Node.js</span>
+              </div>
+              <div class="tooltip">
+                <img class="tech-icon" src="./images/html.png" />
+                <span class="tooltip-text">HTML</span>
+              </div>
+              <div class="tooltip">
+                <img class="tech-icon" src="./images/css.png" />
+                <span class="tooltip-text">CSS</span>
+              </div>
+              <div class="tooltip">
+                <img class="tech-icon" src="./images/tailwind.png" />
+                <span class="tooltip-text">Tailwind</span>
+              </div>
+              <div class="tooltip">
+                <img class="tech-icon" src="./images/mongo.png" />
+                <span class="tooltip-text">MongoDB</span>
+              </div>
+              <div class="tooltip">
+                <img class="tech-icon" src="./images/jest.png" />
+                <span class="tooltip-text">Jest</span>
+              </div>
+              <div class="tooltip">
+                <svg class="tech-icon" version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"><path d="M322.3841858,145.5756683l68.548645,70.2840576l-17.3540955,31.6712189L254.2693634,396.7760925L134.9600067,251.0017548l-17.3540802-35.1420288l68.5486603-70.2840576H322.3841858z M300.2753296,36.0098267l-25.675415,33.9448318C398.0108337,82.0305328,472.09729,207.9121399,433.0419312,318.339447l19.8748169,39.5286865l39.4950256-2.9891663C557.3461304,200.6106415,454.3111572,17.9335766,279.6802673,1.7554766L300.2753296,36.0098267z M17.5861988,348.6918945C-48.5365944,180.315567,80.158432-5.4326692,263.9243469,0.7554546l20.6960144,34.4221573l-25.6242065,33.8766632C124.322998,66.6426926,31.0979595,205.1722717,83.364296,328.7980347l-42.7707596-11.2215271L17.5861988,348.6918945z M486.2941284,368.3666382l-41.0731506,3.1086121l-18.6675415-37.1272278c-54.1093445,124.8833008-250.5884705,162.1810303-335.9082642,9.7871704l-44.8388557-11.7642212l-22.3011608,30.1600037C128.0107422,576.4527588,405.0795898,543.1512451,486.2941284,368.3666382z" fill="#F4A896"/></svg>
+                <span class="tooltip-text">RSpec</span>
+              </div>
+              <div class="tooltip">
+                <svg class="tech-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"><title>Cypress</title><path d="M11.998 0C5.366 0 0 5.367 0 12a11.992 11.992 0 0 0 12 12c6.633 0 12-5.367 12-12-.001-6.633-5.412-12-12.002-12zM6.37 14.575c.392.523.916.742 1.657.742.35 0 .699-.044 1.004-.175.306-.13.655-.306 1.09-.567l1.223 1.745c-1.003.83-2.138 1.222-3.447 1.222-1.048 0-1.92-.218-2.705-.654a4.393 4.393 0 0 1-1.746-1.92c-.392-.83-.611-1.79-.611-2.925 0-1.09.219-2.094.61-2.923a4.623 4.623 0 0 1 1.748-2.007c.741-.48 1.657-.698 2.661-.698.699 0 1.353.087 1.877.305a5.64 5.64 0 0 1 1.614.96l-1.222 1.658A4.786 4.786 0 0 0 9.12 8.77c-.305-.13-.698-.174-1.048-.174-1.483 0-2.225 1.134-2.225 3.446-.043 1.18.175 2.008.524 2.532H6.37zm12 2.705c-.436 1.353-1.091 2.357-2.008 3.098-.916.743-2.138 1.135-3.665 1.266l-.305-2.05c1.003-.132 1.745-.35 2.225-.7.174-.13.524-.523.524-.523L11.519 6.764h3.01l2.095 8.683 2.226-8.683h2.923L18.37 17.28z" fill="#F4A896"/></svg>
+                <span class="tooltip-text">Cypress</span>
+              </div>
+            </div>
           </div>
         </div>
         <p class="pointer">👇 See my projects 👇</p>
-      </div>
-      <div class="projects-container">
+      </section>
+      <section class="projects-container">
         <div class="project-card" id="ecoliday">
           <img src="./images/ecoliday.png" style="width: 100%; height: 200px" />
           <p class="project-subtitle">Find a greener way!</p>
@@ -75,6 +112,9 @@
             </a>
             <a href="https://ecoliday-cxyz.onrender.com/">
               <img src="./images/hyperlink.png" style="width: 30px; height: 30px" />
+            </a>
+            <a href="https://medium.com/@robbie_kirkbride/find-a-greener-way-building-an-eco-conscious-journey-planner-ae02686bbf25">
+              <img src="./images/medium.png" style="width: 30px; height: 30px" />           
             </a>
           </div>
         </div>
@@ -111,12 +151,13 @@
               <img src="./images/github.png" style="width: 30px; height: 30px" />
             </a>
             <a href="https://medium.com/@robbie_kirkbride/learning-with-mern-ing-732ef5f793b5">
-              <img src="./images/medium.png" style="width: 30px; height: 30px" />            </a>
+              <img src="./images/medium.png" style="width: 30px; height: 30px" />           
+            </a>
           </div>
         </div>
         <div class="project-card" id="till">
           <img src="./images/till.png" style="width: 100%; height: 200px" />
-          <p class="project-subtitle">Shop 'till you drop!</p>
+          <p class="project-subtitle">Shop <em>'till</em> you drop!</p>
           <p class="project-text">
             A till app that renders a menu 
             into an interactive blackboard. Take the name
@@ -150,7 +191,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>

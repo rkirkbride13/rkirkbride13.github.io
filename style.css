@@ -14,9 +14,30 @@ body {
   font-family: 'Inconsolata', monospace;;
 }
 
-/* About */
+/* Navbar */
+.navbar {
+  background-color: #F4A896;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 999;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
 
-.about-container {
+.navbar a {
+  font-size: 20px;
+  color: #358597;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+/* Introduction */
+
+.introduction {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,7 +45,7 @@ body {
   align-items: center;
 }
 
-.about-container h1 {
+.introduction h1 {
   padding-bottom: 100px;
 }
 
@@ -63,33 +84,36 @@ body {
 .icons {
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  color: #F4A896;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
 }
 
 .pointer {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   font-size: 24px;
-}
-
-/* Navbar */
-.navbar {
-  background-color: #F4A896;
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  z-index: 9999;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar a {
-  font-size: 20px;
-  color: #358597;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-  text-decoration: underline;
 }
 
 /* Projects */
@@ -106,7 +130,7 @@ body {
 
 .project-card {
   width: 250px;
-  height: 400px;
+  height: 420px;
   margin: 10px;
   text-align: center;
   display: flex;
@@ -137,13 +161,10 @@ body {
   width: 100%;
   position: absolute;
   bottom: 5px;
-  left: 0;
 }
 .link-container a {
   text-decoration: none;
-  font-size: 22px;
   padding: 5px;
-  color: black;
 }
 
 /* Mobile styling */
@@ -151,10 +172,10 @@ body {
 @media screen and (max-width: 768px) {
 
   .navbar a {
-    font-size: 15px;
+    font-size: 16px;
   }
 
-  .about-container h1 {
+  .introduction h1 {
     padding-bottom: 20px;
   }
 
@@ -182,6 +203,12 @@ body {
   .container-right p {
     font-size: 12px;
     line-height: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+  }
+
+  .icons {
     margin-left: 5%;
     margin-right: 5%;
     padding: 10px;
