@@ -38,7 +38,7 @@ body {
 
 /* Introduction */
 
-.introduction {
+.intro {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -46,12 +46,12 @@ body {
   align-items: center;
 }
 
-.introduction h1 {
+.intro h1 {
   padding-top: 55px;
   padding-bottom: 50px;
 }
 
-.container {
+.intro-container {
   max-height: 500px;
   max-width: 900px;
   display: flex;
@@ -60,24 +60,24 @@ body {
   padding-bottom: 100px;
 }
 
-.container-right {
+.intro-right {
   height: 100%;
   align-self: center;
   text-align: justify;
 }
 
-.container-right p {
+.intro-right p {
   font-size: 18px;
   line-height: 33px;
   padding: 20px;
 }
 
-.container-left {
+.intro-left {
   height: 100%;
   align-self: center;
 }
 
-.container-left img {
+.intro-left img {
   max-height: 300px;
   object-fit: cover;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -113,8 +113,10 @@ body {
   visibility: visible;
 }
 
-.pointer {
+.pointer a {
   font-size: 24px;
+  text-decoration: none;
+  color: #F4A896;
 }
 
 /* Projects */
@@ -138,10 +140,16 @@ body {
   flex-direction: column;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.project-card img {
+  border-radius: 5px;
 }
 
 .project-card:hover {
   box-shadow: 0 4px 8px 0 rgba(244, 168, 150, 0.5);
+  transform: scale(1.05);
 }
 
 .project-card img {
@@ -176,16 +184,16 @@ body {
     font-size: 16px;
   }
 
-  .introduction h1 {
+  .intro h1 {
     padding-bottom: 20px;
   }
 
-  .container {
+  .intro-container {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .container-left {
+  .intro-left {
     max-height: 100%;
     max-width: 100%;
     width: auto;
@@ -193,15 +201,15 @@ body {
     padding-bottom: 10px;
   }
 
-  .container-left img {
+  .intro-left img {
     height: 180px;
   }
 
-  .container-right {
+  .intro-right {
     height: 180px;
   }
 
-  .container-right p {
+  .intro-right p {
     font-size: 12px;
     line-height: 20px;
     margin-left: 5%;
@@ -222,7 +230,7 @@ body {
     margin-bottom: 10px;
   }
 
-  .pointer {
+  .pointer a {
     font-size: 18px;
   }
 }
